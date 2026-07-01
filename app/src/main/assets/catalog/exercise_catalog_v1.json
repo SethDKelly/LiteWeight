@@ -1,0 +1,348 @@
+{
+  "catalogVersion": 1,
+  "sourceAttribution": "Exercise taxonomy informed by ExRx.net. Instructions and comments are app-curated.",
+  "entries": [
+    {
+      "catalogId": "lw:barbell-bench-press",
+      "displayName": "Barbell Bench Press",
+      "namingMode": "structured",
+      "equipment": "barbell",
+      "bodyPosition": "flat_bench",
+      "primaryMovement": "bench_press",
+      "gripWidth": "standard",
+      "gripOrientation": "pronated",
+      "unitType": "weight",
+      "classification": { "utility": "basic", "mechanics": "compound", "force": "push", "difficulty": "intermediate", "exrxCategoryPath": ["Chest", "Barbell"] },
+      "instructions": ["Lie on bench with feet flat.", "Grip bar just outside shoulder width.", "Lower to mid-chest; press to lockout."],
+      "comments": ["Retract shoulder blades.", "Use a spotter for heavy sets."],
+      "muscleRoles": [
+        { "muscle": "pectoralis_major_sternal", "role": "target", "displayName": "Pectoralis Major (Sternal)", "bodyRegion": "chest" },
+        { "muscle": "anterior_deltoid", "role": "synergist", "displayName": "Anterior Deltoid", "bodyRegion": "shoulders" },
+        { "muscle": "triceps_brachii", "role": "synergist", "displayName": "Triceps Brachii", "bodyRegion": "arms" }
+      ],
+      "tags": ["chest", "horizontal_push", "barbell"],
+      "referenceUrl": "https://exrx.net/WeightExercises/PectoralSternal/BBBenchPress"
+    },
+    {
+      "catalogId": "lw:barbell-squat",
+      "displayName": "Barbell Back Squat",
+      "namingMode": "structured",
+      "equipment": "barbell",
+      "bodyPosition": "standing",
+      "primaryMovement": "squat",
+      "unitType": "weight",
+      "classification": { "utility": "basic", "mechanics": "compound", "force": "push", "difficulty": "intermediate", "exrxCategoryPath": ["Thighs", "Barbell"] },
+      "instructions": ["Set bar on upper back.", "Brace core; sit hips back and down.", "Drive through mid-foot to stand."],
+      "comments": ["Keep knees tracking over toes.", "Maintain neutral spine."],
+      "muscleRoles": [
+        { "muscle": "quadriceps", "role": "target", "displayName": "Quadriceps", "bodyRegion": "legs" },
+        { "muscle": "gluteus_maximus", "role": "synergist", "displayName": "Gluteus Maximus", "bodyRegion": "legs" }
+      ],
+      "tags": ["legs", "squat", "barbell"]
+    },
+    {
+      "catalogId": "lw:conventional-deadlift",
+      "displayName": "Barbell Deadlift",
+      "namingMode": "structured",
+      "equipment": "barbell",
+      "bodyPosition": "standing",
+      "primaryMovement": "deadlift",
+      "unitType": "weight",
+      "classification": { "utility": "basic", "mechanics": "compound", "force": "pull", "difficulty": "intermediate", "exrxCategoryPath": ["Hips", "Barbell"] },
+      "instructions": ["Stand with bar over mid-foot.", "Hinge and grip the bar.", "Drive hips forward to stand tall."],
+      "comments": ["Keep bar close to legs.", "Avoid rounding the lower back."],
+      "muscleRoles": [
+        { "muscle": "erector_spinae", "role": "target", "displayName": "Erector Spinae", "bodyRegion": "back" },
+        { "muscle": "gluteus_maximus", "role": "synergist", "displayName": "Gluteus Maximus", "bodyRegion": "legs" },
+        { "muscle": "hamstrings", "role": "synergist", "displayName": "Hamstrings", "bodyRegion": "legs" }
+      ],
+      "tags": ["hinge", "posterior_chain", "barbell"]
+    },
+    {
+      "catalogId": "lw:barbell-row",
+      "displayName": "Barbell Bent-Over Row",
+      "namingMode": "structured",
+      "equipment": "barbell",
+      "bodyPosition": "standing",
+      "primaryMovement": "row",
+      "gripOrientation": "pronated",
+      "unitType": "weight",
+      "classification": { "utility": "basic", "mechanics": "compound", "force": "pull", "difficulty": "intermediate", "exrxCategoryPath": ["Back", "Barbell"] },
+      "instructions": ["Hinge forward with flat back.", "Pull bar to lower ribs.", "Lower with control."],
+      "comments": ["Avoid using momentum.", "Squeeze shoulder blades at the top."],
+      "muscleRoles": [
+        { "muscle": "latissimus_dorsi", "role": "target", "displayName": "Latissimus Dorsi", "bodyRegion": "back" },
+        { "muscle": "rhomboids", "role": "synergist", "displayName": "Rhomboids", "bodyRegion": "back" }
+      ],
+      "tags": ["back", "horizontal_pull", "barbell"]
+    },
+    {
+      "catalogId": "lw:overhead-press",
+      "displayName": "Barbell Overhead Press",
+      "namingMode": "structured",
+      "equipment": "barbell",
+      "bodyPosition": "standing",
+      "primaryMovement": "overhead_press",
+      "unitType": "weight",
+      "classification": { "utility": "basic", "mechanics": "compound", "force": "push", "difficulty": "intermediate", "exrxCategoryPath": ["Shoulders", "Barbell"] },
+      "instructions": ["Rack bar at upper chest.", "Press bar overhead to lockout.", "Lower under control."],
+      "comments": ["Brace glutes and core.", "Keep bar path close to face."],
+      "muscleRoles": [
+        { "muscle": "anterior_deltoid", "role": "target", "displayName": "Anterior Deltoid", "bodyRegion": "shoulders" },
+        { "muscle": "triceps_brachii", "role": "synergist", "displayName": "Triceps Brachii", "bodyRegion": "arms" }
+      ],
+      "tags": ["shoulders", "vertical_push", "barbell"]
+    },
+    {
+      "catalogId": "lw:pull-up",
+      "displayName": "Pull-up",
+      "namingMode": "structured",
+      "equipment": "bodyweight",
+      "bodyPosition": "standing",
+      "primaryMovement": "pulldown",
+      "gripOrientation": "pronated",
+      "unitType": "bodyweight",
+      "classification": { "utility": "basic", "mechanics": "compound", "force": "pull", "difficulty": "intermediate", "exrxCategoryPath": ["Back", "Bodyweight"] },
+      "instructions": ["Hang from bar with arms extended.", "Pull chest toward bar.", "Lower with control."],
+      "comments": ["Avoid kipping if training strength.", "Full range if mobility allows."],
+      "muscleRoles": [
+        { "muscle": "latissimus_dorsi", "role": "target", "displayName": "Latissimus Dorsi", "bodyRegion": "back" },
+        { "muscle": "biceps_brachii", "role": "synergist", "displayName": "Biceps Brachii", "bodyRegion": "arms" }
+      ],
+      "tags": ["back", "vertical_pull", "bodyweight"]
+    },
+    {
+      "catalogId": "lw:lat-pulldown",
+      "displayName": "Cable Lat Pulldown",
+      "namingMode": "structured",
+      "equipment": "cable",
+      "bodyPosition": "seated",
+      "primaryMovement": "pulldown",
+      "gripOrientation": "pronated",
+      "unitType": "weight",
+      "classification": { "utility": "auxiliary", "mechanics": "compound", "force": "pull", "difficulty": "beginner", "exrxCategoryPath": ["Back", "Cable"] },
+      "instructions": ["Sit with thighs secured.", "Pull bar to upper chest.", "Return with control."],
+      "comments": ["Lean slightly back.", "Drive elbows down."],
+      "muscleRoles": [
+        { "muscle": "latissimus_dorsi", "role": "target", "displayName": "Latissimus Dorsi", "bodyRegion": "back" }
+      ],
+      "tags": ["back", "vertical_pull", "cable"]
+    },
+    {
+      "catalogId": "lw:romanian-deadlift",
+      "displayName": "Barbell Romanian Deadlift",
+      "namingMode": "structured",
+      "equipment": "barbell",
+      "bodyPosition": "standing",
+      "primaryMovement": "deadlift",
+      "unitType": "weight",
+      "classification": { "utility": "auxiliary", "mechanics": "compound", "force": "pull", "difficulty": "intermediate", "exrxCategoryPath": ["Hips", "Barbell"] },
+      "instructions": ["Hold bar at hip height.", "Push hips back lowering bar along legs.", "Drive hips forward to return."],
+      "comments": ["Feel stretch in hamstrings.", "Keep bar close."],
+      "muscleRoles": [
+        { "muscle": "hamstrings", "role": "target", "displayName": "Hamstrings", "bodyRegion": "legs" },
+        { "muscle": "gluteus_maximus", "role": "synergist", "displayName": "Gluteus Maximus", "bodyRegion": "legs" }
+      ],
+      "tags": ["hinge", "hamstrings", "barbell"]
+    },
+    {
+      "catalogId": "lw:leg-press",
+      "displayName": "Machine Leg Press",
+      "namingMode": "structured",
+      "equipment": "machine",
+      "bodyPosition": "seated",
+      "primaryMovement": "squat",
+      "unitType": "weight",
+      "classification": { "utility": "auxiliary", "mechanics": "compound", "force": "push", "difficulty": "beginner", "exrxCategoryPath": ["Thighs", "Machine"] },
+      "instructions": ["Place feet shoulder-width on platform.", "Lower sled with control.", "Press without locking knees aggressively."],
+      "comments": ["Keep lower back in contact with pad."],
+      "muscleRoles": [
+        { "muscle": "quadriceps", "role": "target", "displayName": "Quadriceps", "bodyRegion": "legs" }
+      ],
+      "tags": ["legs", "machine"]
+    },
+    {
+      "catalogId": "lw:dumbbell-incline-press",
+      "displayName": "Dumbbell Incline Bench Press",
+      "namingMode": "structured",
+      "equipment": "dumbbell",
+      "bodyPosition": "incline",
+      "primaryMovement": "bench_press",
+      "gripOrientation": "neutral",
+      "unitType": "weight",
+      "classification": { "utility": "auxiliary", "mechanics": "compound", "force": "push", "difficulty": "intermediate", "exrxCategoryPath": ["Chest", "Dumbbell"] },
+      "instructions": ["Set bench to incline.", "Press dumbbells up over chest.", "Lower with elbows at ~45°."],
+      "comments": ["Control the descent.", "Do not clang weights at top."],
+      "muscleRoles": [
+        { "muscle": "pectoralis_major_clavicular", "role": "target", "displayName": "Pectoralis Major (Clavicular)", "bodyRegion": "chest" },
+        { "muscle": "anterior_deltoid", "role": "synergist", "displayName": "Anterior Deltoid", "bodyRegion": "shoulders" }
+      ],
+      "tags": ["chest", "incline", "dumbbell"]
+    },
+    {
+      "catalogId": "lw:seated-cable-row",
+      "displayName": "Cable Seated Row",
+      "namingMode": "structured",
+      "equipment": "cable",
+      "bodyPosition": "seated",
+      "primaryMovement": "row",
+      "unitType": "weight",
+      "classification": { "utility": "auxiliary", "mechanics": "compound", "force": "pull", "difficulty": "beginner", "exrxCategoryPath": ["Back", "Cable"] },
+      "instructions": ["Sit upright with neutral spine.", "Pull handle to abdomen.", "Extend arms with control."],
+      "comments": ["Avoid excessive torso swing."],
+      "muscleRoles": [
+        { "muscle": "latissimus_dorsi", "role": "target", "displayName": "Latissimus Dorsi", "bodyRegion": "back" },
+        { "muscle": "rhomboids", "role": "synergist", "displayName": "Rhomboids", "bodyRegion": "back" }
+      ],
+      "tags": ["back", "horizontal_pull", "cable"]
+    },
+    {
+      "catalogId": "lw:lateral-raise",
+      "displayName": "Dumbbell Lateral Raise",
+      "namingMode": "structured",
+      "equipment": "dumbbell",
+      "bodyPosition": "standing",
+      "primaryMovement": "raise",
+      "unitType": "weight",
+      "classification": { "utility": "auxiliary", "mechanics": "isolated", "force": "push", "difficulty": "beginner", "exrxCategoryPath": ["Shoulders", "Dumbbell"] },
+      "instructions": ["Stand with dumbbells at sides.", "Raise arms to shoulder height.", "Lower slowly."],
+      "comments": ["Slight bend in elbows.", "Avoid shrugging excessively."],
+      "muscleRoles": [
+        { "muscle": "lateral_deltoid", "role": "target", "displayName": "Lateral Deltoid", "bodyRegion": "shoulders" }
+      ],
+      "tags": ["shoulders", "isolation", "dumbbell"]
+    },
+    {
+      "catalogId": "lw:barbell-curl",
+      "displayName": "Barbell Curl",
+      "namingMode": "structured",
+      "equipment": "barbell",
+      "bodyPosition": "standing",
+      "primaryMovement": "curl",
+      "gripOrientation": "supinated",
+      "unitType": "weight",
+      "classification": { "utility": "auxiliary", "mechanics": "isolated", "force": "pull", "difficulty": "beginner", "exrxCategoryPath": ["Arms", "Barbell"] },
+      "instructions": ["Stand with underhand grip.", "Curl bar without swinging.", "Lower under control."],
+      "comments": ["Keep elbows pinned to sides."],
+      "muscleRoles": [
+        { "muscle": "biceps_brachii", "role": "target", "displayName": "Biceps Brachii", "bodyRegion": "arms" }
+      ],
+      "tags": ["arms", "biceps", "barbell"]
+    },
+    {
+      "catalogId": "lw:tricep-pushdown",
+      "displayName": "Cable Triceps Pushdown",
+      "namingMode": "structured",
+      "equipment": "cable",
+      "bodyPosition": "standing",
+      "primaryMovement": "extension",
+      "unitType": "weight",
+      "classification": { "utility": "auxiliary", "mechanics": "isolated", "force": "push", "difficulty": "beginner", "exrxCategoryPath": ["Arms", "Cable"] },
+      "instructions": ["Set elbows at sides.", "Extend arms down fully.", "Return with control."],
+      "comments": ["Keep upper arms stationary."],
+      "muscleRoles": [
+        { "muscle": "triceps_brachii", "role": "target", "displayName": "Triceps Brachii", "bodyRegion": "arms" }
+      ],
+      "tags": ["arms", "triceps", "cable"]
+    },
+    {
+      "catalogId": "lw:leg-curl",
+      "displayName": "Machine Leg Curl",
+      "namingMode": "structured",
+      "equipment": "machine",
+      "bodyPosition": "lying",
+      "primaryMovement": "curl",
+      "unitType": "weight",
+      "classification": { "utility": "auxiliary", "mechanics": "isolated", "force": "pull", "difficulty": "beginner", "exrxCategoryPath": ["Thighs", "Machine"] },
+      "instructions": ["Align knees with machine pivot.", "Curl heels toward glutes.", "Lower slowly."],
+      "comments": ["Keep hips pressed into pad."],
+      "muscleRoles": [
+        { "muscle": "hamstrings", "role": "target", "displayName": "Hamstrings", "bodyRegion": "legs" }
+      ],
+      "tags": ["legs", "hamstrings", "machine"]
+    },
+    {
+      "catalogId": "lw:leg-extension",
+      "displayName": "Machine Leg Extension",
+      "namingMode": "structured",
+      "equipment": "machine",
+      "bodyPosition": "seated",
+      "primaryMovement": "extension",
+      "unitType": "weight",
+      "classification": { "utility": "auxiliary", "mechanics": "isolated", "force": "push", "difficulty": "beginner", "exrxCategoryPath": ["Thighs", "Machine"] },
+      "instructions": ["Sit with knees aligned to pivot.", "Extend legs to straight.", "Lower with control."],
+      "comments": ["Avoid snapping into lockout."],
+      "muscleRoles": [
+        { "muscle": "quadriceps", "role": "target", "displayName": "Quadriceps", "bodyRegion": "legs" }
+      ],
+      "tags": ["legs", "quads", "machine"]
+    },
+    {
+      "catalogId": "lw:hip-thrust",
+      "displayName": "Barbell Hip Thrust",
+      "namingMode": "structured",
+      "equipment": "barbell",
+      "bodyPosition": "flat_bench",
+      "primaryMovement": "squat",
+      "unitType": "weight",
+      "classification": { "utility": "auxiliary", "mechanics": "compound", "force": "push", "difficulty": "intermediate", "exrxCategoryPath": ["Hips", "Barbell"] },
+      "instructions": ["Upper back on bench; bar over hips.", "Drive hips up to full extension.", "Lower under control."],
+      "comments": ["Chin tucked.", "Pause briefly at top."],
+      "muscleRoles": [
+        { "muscle": "gluteus_maximus", "role": "target", "displayName": "Gluteus Maximus", "bodyRegion": "legs" }
+      ],
+      "tags": ["glutes", "hinge", "barbell"]
+    },
+    {
+      "catalogId": "lw:push-up",
+      "displayName": "Push-up",
+      "namingMode": "structured",
+      "equipment": "bodyweight",
+      "bodyPosition": "lying",
+      "primaryMovement": "bench_press",
+      "unitType": "bodyweight",
+      "classification": { "utility": "basic", "mechanics": "compound", "force": "push", "difficulty": "beginner", "exrxCategoryPath": ["Chest", "Bodyweight"] },
+      "instructions": ["Hands under shoulders; body in plank.", "Lower chest toward floor.", "Press back up."],
+      "comments": ["Keep core tight.", "Modify on knees if needed."],
+      "muscleRoles": [
+        { "muscle": "pectoralis_major_sternal", "role": "target", "displayName": "Pectoralis Major (Sternal)", "bodyRegion": "chest" },
+        { "muscle": "triceps_brachii", "role": "synergist", "displayName": "Triceps Brachii", "bodyRegion": "arms" }
+      ],
+      "tags": ["chest", "bodyweight"]
+    },
+    {
+      "catalogId": "lw:face-pull",
+      "displayName": "Cable Face Pull",
+      "namingMode": "structured",
+      "equipment": "cable",
+      "bodyPosition": "standing",
+      "primaryMovement": "row",
+      "unitType": "weight",
+      "classification": { "utility": "auxiliary", "mechanics": "compound", "force": "pull", "difficulty": "beginner", "exrxCategoryPath": ["Shoulders", "Cable"] },
+      "instructions": ["Pull rope toward face.", "Externally rotate at end range.", "Return with control."],
+      "comments": ["Great for shoulder health.", "Use light-to-moderate load."],
+      "muscleRoles": [
+        { "muscle": "posterior_deltoid", "role": "target", "displayName": "Posterior Deltoid", "bodyRegion": "shoulders" },
+        { "muscle": "rhomboids", "role": "synergist", "displayName": "Rhomboids", "bodyRegion": "back" }
+      ],
+      "tags": ["shoulders", "rear_delts", "cable"]
+    },
+    {
+      "catalogId": "lw:dumbbell-lunge",
+      "displayName": "Dumbbell Walking Lunge",
+      "namingMode": "structured",
+      "equipment": "dumbbell",
+      "bodyPosition": "standing",
+      "primaryMovement": "lunge",
+      "unitType": "weight",
+      "classification": { "utility": "auxiliary", "mechanics": "compound", "force": "push", "difficulty": "intermediate", "exrxCategoryPath": ["Thighs", "Dumbbell"] },
+      "instructions": ["Hold dumbbells at sides.", "Step forward into lunge.", "Drive through front foot to next step."],
+      "comments": ["Keep torso upright.", "Avoid knee collapsing inward."],
+      "muscleRoles": [
+        { "muscle": "quadriceps", "role": "target", "displayName": "Quadriceps", "bodyRegion": "legs" },
+        { "muscle": "gluteus_maximus", "role": "synergist", "displayName": "Gluteus Maximus", "bodyRegion": "legs" }
+      ],
+      "tags": ["legs", "unilateral", "dumbbell"]
+    }
+  ]
+}

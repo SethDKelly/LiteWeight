@@ -1,0 +1,110 @@
+{
+  "version": 1,
+  "presets": [
+    {
+      "presetId": "preset:full-body-3x",
+      "name": "Full Body 3×/week",
+      "difficulty": "beginner",
+      "splitType": "FullBody",
+      "days": [
+        {
+          "name": "Full Body A",
+          "exercises": [
+            { "catalogId": "lw:barbell-squat", "targetSets": 3, "targetRepsMin": 8, "targetRepsMax": 10 },
+            { "catalogId": "lw:barbell-bench-press", "targetSets": 3, "targetRepsMin": 8, "targetRepsMax": 10 },
+            { "catalogId": "lw:barbell-row", "targetSets": 3, "targetRepsMin": 8, "targetRepsMax": 10 },
+            { "catalogId": "lw:overhead-press", "targetSets": 3, "targetRepsMin": 8, "targetRepsMax": 10 }
+          ]
+        },
+        {
+          "name": "Full Body B",
+          "exercises": [
+            { "catalogId": "lw:romanian-deadlift", "targetSets": 3, "targetRepsMin": 8, "targetRepsMax": 10 },
+            { "catalogId": "lw:dumbbell-incline-press", "targetSets": 3, "targetRepsMin": 10, "targetRepsMax": 12 },
+            { "catalogId": "lw:lat-pulldown", "targetSets": 3, "targetRepsMin": 10, "targetRepsMax": 12 },
+            { "catalogId": "lw:dumbbell-lunge", "targetSets": 3, "targetRepsMin": 10, "targetRepsMax": 12 }
+          ]
+        }
+      ]
+    },
+    {
+      "presetId": "preset:upper-lower-4x",
+      "name": "Upper / Lower 4×/week",
+      "difficulty": "intermediate",
+      "splitType": "UpperLower",
+      "days": [
+        {
+          "name": "Upper A",
+          "exercises": [
+            { "catalogId": "lw:barbell-bench-press", "targetSets": 4, "targetRepsMin": 6, "targetRepsMax": 8 },
+            { "catalogId": "lw:barbell-row", "targetSets": 4, "targetRepsMin": 6, "targetRepsMax": 8 },
+            { "catalogId": "lw:overhead-press", "targetSets": 3, "targetRepsMin": 8, "targetRepsMax": 10 },
+            { "catalogId": "lw:face-pull", "targetSets": 3, "targetRepsMin": 12, "targetRepsMax": 15 }
+          ]
+        },
+        {
+          "name": "Lower A",
+          "exercises": [
+            { "catalogId": "lw:barbell-squat", "targetSets": 4, "targetRepsMin": 6, "targetRepsMax": 8 },
+            { "catalogId": "lw:romanian-deadlift", "targetSets": 3, "targetRepsMin": 8, "targetRepsMax": 10 },
+            { "catalogId": "lw:leg-press", "targetSets": 3, "targetRepsMin": 10, "targetRepsMax": 12 },
+            { "catalogId": "lw:standing-calf-raise", "targetSets": 4, "targetRepsMin": 12, "targetRepsMax": 15 }
+          ]
+        },
+        {
+          "name": "Upper B",
+          "exercises": [
+            { "catalogId": "lw:pull-up", "targetSets": 4, "targetRepsMin": 6, "targetRepsMax": 10 },
+            { "catalogId": "lw:dumbbell-incline-press", "targetSets": 3, "targetRepsMin": 8, "targetRepsMax": 12 },
+            { "catalogId": "lw:seated-cable-row", "targetSets": 3, "targetRepsMin": 10, "targetRepsMax": 12 },
+            { "catalogId": "lw:lateral-raise", "targetSets": 3, "targetRepsMin": 12, "targetRepsMax": 15 }
+          ]
+        },
+        {
+          "name": "Lower B",
+          "exercises": [
+            { "catalogId": "lw:front-squat", "targetSets": 3, "targetRepsMin": 8, "targetRepsMax": 10 },
+            { "catalogId": "lw:hip-thrust", "targetSets": 3, "targetRepsMin": 8, "targetRepsMax": 12 },
+            { "catalogId": "lw:leg-curl", "targetSets": 3, "targetRepsMin": 10, "targetRepsMax": 12 },
+            { "catalogId": "lw:leg-extension", "targetSets": 3, "targetRepsMin": 12, "targetRepsMax": 15 }
+          ]
+        }
+      ]
+    },
+    {
+      "presetId": "preset:ppl-3day",
+      "name": "Push Pull Legs",
+      "difficulty": "intermediate",
+      "splitType": "PPL",
+      "days": [
+        {
+          "name": "Push",
+          "exercises": [
+            { "catalogId": "lw:barbell-bench-press", "targetSets": 4, "targetRepsMin": 6, "targetRepsMax": 8 },
+            { "catalogId": "lw:overhead-press", "targetSets": 3, "targetRepsMin": 8, "targetRepsMax": 10 },
+            { "catalogId": "lw:dumbbell-incline-press", "targetSets": 3, "targetRepsMin": 10, "targetRepsMax": 12 },
+            { "catalogId": "lw:tricep-pushdown", "targetSets": 3, "targetRepsMin": 12, "targetRepsMax": 15 }
+          ]
+        },
+        {
+          "name": "Pull",
+          "exercises": [
+            { "catalogId": "lw:conventional-deadlift", "targetSets": 3, "targetRepsMin": 5, "targetRepsMax": 6 },
+            { "catalogId": "lw:pull-up", "targetSets": 4, "targetRepsMin": 6, "targetRepsMax": 10 },
+            { "catalogId": "lw:seated-cable-row", "targetSets": 3, "targetRepsMin": 10, "targetRepsMax": 12 },
+            { "catalogId": "lw:face-pull", "targetSets": 3, "targetRepsMin": 15, "targetRepsMax": 20 }
+          ]
+        },
+        {
+          "name": "Legs",
+          "exercises": [
+            { "catalogId": "lw:barbell-squat", "targetSets": 4, "targetRepsMin": 6, "targetRepsMax": 8 },
+            { "catalogId": "lw:romanian-deadlift", "targetSets": 3, "targetRepsMin": 8, "targetRepsMax": 10 },
+            { "catalogId": "lw:leg-press", "targetSets": 3, "targetRepsMin": 10, "targetRepsMax": 12 },
+            { "catalogId": "lw:standing-calf-raise", "targetSets": 4, "targetRepsMin": 12, "targetRepsMax": 15 }
+          ]
+        }
+      ]
+    }
+  ]
+}
