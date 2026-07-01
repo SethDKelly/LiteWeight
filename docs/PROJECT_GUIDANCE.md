@@ -353,3 +353,4 @@ Map packages by concept or feature slice (e.g. `exercise`, `program`, `session`,
 - `EXERCISE_NAMING_FRAMEWORK.md`
 - `EXERCISE_CATALOG.md`
 - `ANALYTICS_AND_PROGRESSION.md`
+- `BACKLOG.md`

@@ -39,6 +39,9 @@ Phases **0–5** are shipped in the `main` branch. Room schema **v6**. Unit test
 - `ANALYTICS_AND_PROGRESSION.md`  
   Progression metrics, PR rules, projection pipeline, and chart requirements.
 
+- `BACKLOG.md`  
+  Future features and ideas not yet in the phase plan (backup/sync, polish items, etc.).
+
 ## Suggested Reading Order
 
 1. `PROJECT_GUIDANCE.md`
@@ -47,6 +50,7 @@ Phases **0–5** are shipped in the `main` branch. Room schema **v6**. Unit test
 4. `EXERCISE_NAMING_FRAMEWORK.md`
 5. `EXERCISE_CATALOG.md`
 6. `ANALYTICS_AND_PROGRESSION.md`
+7. `BACKLOG.md` (when planning post–Phase 5 work)
 
 ## Code map (packages)
 

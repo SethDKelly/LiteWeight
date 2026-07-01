@@ -215,6 +215,8 @@ See `EXERCISE_CATALOG.md`.
 - Plan CSV/JSON export for session history and PRs.
 - Keep soft-delete/archive semantics for exercises and programs to preserve history links.
 
+See `BACKLOG.md` §1 for the proposed backup, restore, and auto-sync design.
+
 ## 7) Current implementation (Room v6)
 
 The following tables exist in `LiteWeightDatabase` (version **6**). Names match Room `@Entity` table names.
