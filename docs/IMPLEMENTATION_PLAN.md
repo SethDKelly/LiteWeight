@@ -32,7 +32,9 @@ This plan converts `PROJECT_GUIDANCE.md` into executable work with clear phases.
 
 ## 3) Phase Plan
 
-## Phase 0: Project foundation
+**Status key:** ✅ shipped · ⏳ not started
+
+## Phase 0: Project foundation ✅
 
 **Outcome:** Runnable app shell, toolchain pinned, concept package layout, empty navigation graph—no feature-complete logging yet.
 
@@ -43,7 +45,7 @@ This plan converts `PROJECT_GUIDANCE.md` into executable work with clear phases.
 - Add baseline CI workflow (assembleDebug, unit tests, lint).
 - Document local run steps in root `README.md`.
 
-## Phase 1: Core logging and exercises
+## Phase 1: Core logging and exercises ✅
 
 **Outcome:** User can search the built-in catalog, create custom exercises, and log a basic session.
 
@@ -61,13 +63,13 @@ This plan converts `PROJECT_GUIDANCE.md` into executable work with clear phases.
 - Add unit preference (kg/lb) and user settings skeleton.
 - Add unit tests for concept invariants, catalog seeding, and session immutability behavior.
 
-## Phase 1b: Catalog expansion (parallel or follow-on)
+## Phase 1b: Catalog expansion (parallel or follow-on) ✅
 
 - Expand toward **rich tier** (hundreds of entries) from ExRx directory coverage map.
 - Search filters: muscle, equipment, mechanics (`compound` / `isolated`), force (`push` / `pull`).
 - Wire catalog metadata into substitution suggestions (same target muscle).
 
-## Phase 2: Programs, splits, and prefill
+## Phase 2: Programs, splits, and prefill ✅
 
 - Implement `Program` authoring and editing (custom routines/splits).
 - Implement `PresetProgram` browsing and install-to-library flow.
@@ -77,34 +79,34 @@ This plan converts `PROJECT_GUIDANCE.md` into executable work with clear phases.
   - carry last successful load
   - blank template
 
-## Phase 3: Progression levels
+## Phase 3: Progression levels ✅
 
 - Implement `ProgressionScheme` (levels/tier rules and block assignment).
 - Surface current level/phase in session and program views.
 - Add rule-evaluation tests for level advancement.
 
-## Phase 4: Analytics and progression visuals
+## Phase 4: Analytics and progression visuals ✅
 
 - Build projection jobs/read models for progression metrics.
 - Implement visual progression charts per exercise.
 - Implement visual PR timeline and latest PR callouts.
 - Validate performance on larger local datasets.
 
-## Phase 5: Substitution, auto routines, and rotation
+## Phase 5: Substitution, auto routines, and rotation ✅
 
 - Implement `MovementSlot`, `SubstitutionGroup`, and program-level overrides.
 - Implement `RotationPlan` cadence resolver (N days/weeks/months).
 - Implement `RoutineGenerator` v1 (template/rule-based; editable draft before save).
 - Show current routine and next routine preview in planner UX.
 
-## Phase 6: ML-assisted insights
+## Phase 6: ML-assisted insights ⏳
 
 - Build feature extraction pipeline from session projections.
 - Integrate on-device model (TensorFlow Lite / LiteRT) for load/plateau/deload insights.
 - Insight UI: explain, dismiss, optional accept-to-prefill.
 - Rule-based fallback when data or confidence is insufficient.
 
-## Phase 7: Polish and release readiness
+## Phase 7: Polish and release readiness ⏳
 
 - UX polish, onboarding copy, and empty states.
 - Rest timer, duplicate-set shortcuts, free-session entry.

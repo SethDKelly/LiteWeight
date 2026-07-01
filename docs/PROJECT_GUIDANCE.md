@@ -38,20 +38,21 @@ The capability list is broad; **ship in layers** so daily logging stays simple:
 
 - **Default path:** open app → see today’s work → log sets → done (≤3 meaningful taps to first logged set).
 - **Progressive disclosure:** rotation, progression levels, prefill overrides, and ML insights live behind clear entry points—not the first-run experience.
-- **v1 “simple core”** before advanced automation: custom exercises, one active routine, fast logging, basic charts/PRs, one-tap exercise swap.
-- **v2+:** auto routine generation, rotation cadence, ML insights, full substitution groups.
+- **Shipped (Phases 0–5):** custom exercises, active program with presets, fast logging, charts/PRs, in-session swap (muscle + substitution groups), rotation plans, routine generator, progression levels.
+- **Next (Phases 6–7):** on-device ML insights, rest timer, free-session mode, export/backup, onboarding, production migrations.
 
 **Still missing from docs (recommended additions):**
 
 | Area | Gap | Recommendation |
 |------|-----|----------------|
 | **In-session UX** | Rest timer, duplicate last set, skip exercise, reorder exercises | Add to session UX backlog; high value for lifters |
-| **Units & increments** | kg/lb preference, plate/bar math, standard increment steps (2.5 / 5) | User settings + logging shortcuts |
+| **Units & increments** | kg/lb preference done; plate/bar math, standard increment steps (2.5 / 5) | User settings + logging shortcuts |
 | **Quick workout** | Log without an active program | “Free session” mode using same `WorkoutSession` model |
-| **Movement slots** | Programs bind to abstract roles (“main squat”) not only fixed exercises | Enables substitution without breaking program structure—see `MovementSlot` (§4.11) |
+| **Program-level override table** | `ProgramExerciseOverride` entity documented but not persisted | Wire program default substitute UI to storage |
 | **Onboarding** | First-run: units, days/week, equipment, optional goal | Drives `RoutineGenerator` inputs and defaults |
 | **Deload / fatigue** | Mentioned in progression levels but not as user-facing action | Tie to `ProgressionScheme` + optional ML suggestion |
 | **Import/export** | Export only lightly mentioned | Backup/restore story before users accumulate months of data |
+| **Production migrations** | Destructive migration during dev | Replace before Play release |
 | **Accessibility** | Large touch targets noted; no broader a11y | TalkBack labels, contrast, font scaling for gym use |
 
 **Non-goals (initially)**
@@ -310,18 +311,18 @@ Align implementation with concepts using clear **domain** types and **use cases*
 | Testing | Unit tests for concept invariants; UI tests for critical flows |
 | On-device ML | TensorFlow Lite / LiteRT for lift insights; rule-based fallback when data sparse |
 
-Map packages by concept or feature slice (e.g. `exercise`, `program`, `session`, `progression`, `insights`) rather than only by layer, to keep boundaries visible.
+Map packages by concept or feature slice (e.g. `exercise`, `program`, `session`, `progression`, `analytics`, `movement`, `substitution`, `rotation`, `generator`) rather than only by layer, to keep boundaries visible.
 
 ---
 
 ## 8. Milestones (example)
 
-1. **M1 — Core logging:** `ExerciseKind` (including **user-defined** exercises), `WorkoutSession`, local persistence, manual session logging, **in-session exercise swap** (basic).
-2. **M2 — Programs & splits:** `Program` (custom **routines/splits**), `ActiveProgram`, `PresetProgram` (**premade** selection/install); `PrefillPolicy` v1; optional `MovementSlot` for substitution-ready templates.
-3. **M3 — Progression & analytics:** `ProgressionScheme` (**progression levels**), `Progression` charts (**visual progression** + **visual PRs** per exercise).
-4. **M4 — Rotation & substitution:** `RotationPlan`; `ExerciseSubstitution` groups and program-level swap; `RoutineGenerator` v1 (rule-based auto-populate).
-5. **M5 — ML insights:** `MLInsights` on-device (plateau/deload/load suggestions) with explainability and dismiss flow.
-6. **M6 — Polish:** export/backup, rest timer & logging shortcuts, equipment filters if retained, performance on long histories.
+1. **M1 — Core logging:** ✅ `ExerciseKind` (including **user-defined** exercises), `WorkoutSession`, local persistence, manual session logging, **in-session exercise swap** (basic).
+2. **M2 — Programs & splits:** ✅ `Program` (custom **routines/splits**), `ActiveProgram`, `PresetProgram` (**premade** selection/install); `PrefillPolicy` v1; `MovementSlot` on program exercises.
+3. **M3 — Progression & analytics:** ✅ `ProgressionScheme` (**progression levels**), rule-based projections, **visual progression** + **visual PRs** per exercise.
+4. **M4 — Rotation & substitution:** ✅ `RotationPlan`; `SubstitutionGroup` + in-session swap; `RoutineGenerator` v1 (rule-based auto-populate).
+5. **M5 — ML insights:** ⏳ `MLInsights` on-device (plateau/deload/load suggestions) with explainability and dismiss flow.
+6. **M6 — Polish:** ⏳ export/backup, rest timer & logging shortcuts, production migrations, performance on long histories.
 
 ---
 

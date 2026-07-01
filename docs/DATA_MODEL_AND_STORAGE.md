@@ -203,12 +203,39 @@ See `EXERCISE_CATALOG.md`.
 ## 5) Migration Strategy
 
 - Version schema from day one and track each migration in tests.
-- Never drop user training data in destructive migrations.
+- Never drop user training data in destructive migrations **in production releases**.
 - Use additive changes first, then background backfill when needed.
 - Keep old-to-new mapping docs for concept refactors.
+
+**Current pre-release behavior:** the app uses `fallbackToDestructiveMigration()` while the schema is still evolving (v6). Installing an APK with a higher schema version **wipes local data**. Replace this with tested incremental migrations before Play Store release.
 
 ## 6) Backup, Export, and Retention
 
 - Allow platform backup where policy permits.
 - Plan CSV/JSON export for session history and PRs.
 - Keep soft-delete/archive semantics for exercises and programs to preserve history links.
+
+## 7) Current implementation (Room v6)
+
+The following tables exist in `LiteWeightDatabase` (version **6**). Names match Room `@Entity` table names.
+
+| Table | Purpose |
+|-------|---------|
+| `exercise_kinds` | User and built-in exercises |
+| `exercise_classifications` | Mechanics, force, utility (catalog) |
+| `exercise_instructions` / `exercise_comments` | Rich catalog text |
+| `muscle_vocabulary` / `exercise_muscle_roles` | Muscle tagging |
+| `app_metadata` | Installed catalog version |
+| `workout_sessions` / `workout_exercise_entries` / `workout_set_entries` | Session source of truth |
+| `programs` / `program_days` / `program_exercises` | Routine templates (`movementSlotId` on exercises) |
+| `active_programs` | Active assignment (`rotationPlanId` optional) |
+| `installed_presets` | Preset install tracking |
+| `progression_schemes` / `progression_levels` | Level definitions and rules |
+| `exercise_session_snapshots` / `exercise_pr_events` / `exercise_analytics_summaries` | Analytics projections |
+| `movement_slots` | Seeded abstract roles (9 defaults) |
+| `substitution_groups` / `substitution_members` | User-defined swap pools |
+| `rotation_plans` / `rotation_slots` | Cadence-based program rotation |
+
+**Not yet persisted:** `ProgramExerciseOverride`, `RoutineGeneratorProfile`, `MLInsightRecord`, and standalone `PrefillPolicy` rows (prefill modes are handled in application logic today).
+
+**Seeded on first launch:** exercise catalog v2 (63 entries), movement slots, built-in “Linear 3-phase” progression scheme, preset program definitions (install on demand).

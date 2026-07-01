@@ -112,3 +112,15 @@ WorkoutSession complete
 - Golden fixtures for feature extraction.
 - Model output bounds tests (suggestions within sane % of recent loads).
 - A/B or shadow mode during development to compare ML vs rule suggestions.
+
+## 10) Implementation status
+
+**Shipped (Phase 4):**
+
+- `AnalyticsProjectionService` runs on session completion.
+- Projection tables: `exercise_session_snapshots`, `exercise_pr_events`, `exercise_analytics_summaries`.
+- `MetricsCalculator` and `PrDetector` with unit tests.
+- Exercise detail UI: progression line chart (Compose Canvas), PR callouts, metric/window chips, PR timeline.
+- Home: sessions completed this week.
+
+**Not yet shipped:** ML-assisted insights (§9), golden-data regression fixtures, performance benchmarks on large histories.
